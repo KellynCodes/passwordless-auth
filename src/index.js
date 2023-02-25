@@ -31,7 +31,7 @@ app.post("/login", (req, res) => {
   let mailRequest = getMailOptions(email, link);
 
   //Send mail
-  return getTransport().sendMail(mailRequest, (error) => {
+  return getTransport.sendMail(mailRequest, (error) => {
     if (error) {
       res.status(404).send("Can't send email.");
     } else {
@@ -62,7 +62,7 @@ app.get("/verify", (req, res) => {
     !decodedToken.hasOwnProperty("email") ||
     !decodedToken.hasOwnProperty("expirationDate")
   ) {
-    res.status(401).send("Invalid authentication credentials.");
+    res.status(401).send("Invalid authentication credentials. boom");
     return;
   }
 
