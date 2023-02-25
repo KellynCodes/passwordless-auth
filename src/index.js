@@ -17,6 +17,9 @@ app.get("/", (_, res) =>
 
 app.post("/login", (req, res) => {
   //Get email from request body
+  res.status(200).send({
+    message: "Enter your email.",
+  })
   const { email } = req.body;
   if (!email) {
     res.status(400).send({
@@ -26,7 +29,7 @@ app.post("/login", (req, res) => {
 
   //Prepare variables
   const token = generateToken(email);
-  const link = `http://localhost:8000/verify?token=${token}`;
+  const link = `https://passwordless-auth.onrender.com/verify?token=${token}`;
 
   //Create mailrequest
   let mailRequest = getMailOptions(email, link);
