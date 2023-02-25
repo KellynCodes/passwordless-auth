@@ -19,10 +19,10 @@ const generateToken = (email) => {
 
 const getMailOptions = (email, link) => {
   let body = `
-  <img width="50" height="100" src="https://th.bing.com/th?id=OIP.3GeB2h2-NuvZ_hUPC-LXiAAAAA&w=200&h=150&c=8&rs=1&o=6&pid=5.1" alt="app-logo"/>
+  <img style="height: 20rem; width: 20rem; border-radius: 50%; object-fit: contain;" src="https://th.bing.com/th?id=OIP.3GeB2h2-NuvZ_hUPC-LXiAAAAA&w=200&h=150&c=8&rs=1&o=6&pid=5.1" alt="app-logo"/>
   <h2>Hey! ${email}</h2>
   <p>Click on this link to login to your account</p>
-  <a href=${link}>Sign In</a>
+  <a style="text-decoration: none; font-size: 0.9rem; background: deepskyblue; color: white; border-radius: 7px; text-align: center; padding: 0.5rem" href=${link}>Sign In</a>
   <p>Please note that for added security this link becomes invalid after 45 minutes</p>
   <h5>@Kellyncodes</h5>`;
 
@@ -31,7 +31,7 @@ const getMailOptions = (email, link) => {
     subject: "Kellyncodes Safe Login Link",
     to: email,
     html: body,
-    from: process.env.EMAIL_USER,
+    from: "kellyncodes@gmail.com",
   };
 };
 
