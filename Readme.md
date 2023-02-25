@@ -1,4 +1,4 @@
-# Passwordless Auth
+# Passwordless Auth ✔✌👌👌
 
 **This password verification system is built with node/expressjs to send verification link to users instead of using password to verify users**
 ## To use this project 
@@ -11,10 +11,11 @@ cd passwordless-auth
 npm install
 ```
 __To install the packages used in this project__
-- Express
-- nodeMailer
-- jsonwebtoken
-- dotenv for .env i.e reading evironment variables.
+
+- Express 👌
+- nodeMailer 👌
+- jsonwebtoken 👌
+- dotenv for .env i.e reading evironment variables. 👌👌
 
 -----
 Setting up your .env file.
@@ -41,6 +42,7 @@ __This command will run the app on port 8000__
 **Install this vscode extension thunder client(it function as an alternative for postman)**
 
 - __Paste this route on the search box__
+http://localhost:8000/login
 - __At the body do this__
 ```json
 {
@@ -51,3 +53,5 @@ __This command will run the app on port 8000__
 
 
 **This will send an email to the email specified on the req.body**
+
+👌👌 Happy Coding ...😀👩👩
