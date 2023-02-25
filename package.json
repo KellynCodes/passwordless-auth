@@ -2,7 +2,7 @@
   "name": "passwordless-auth",
   "version": "1.0.0",
   "description": "Password authentication with nodemailer",
-  "main": "./src/index.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kellyncodes/password-auth.git"
